@@ -12,19 +12,20 @@ class FutureAsyncAwait extends StatelessWidget {
       ),
       body: Center(
         child: FutureBuilder<String>(
-          future: helloWorld(),
-          builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
-            if (snapshot.hasData) {
+            future: helloWorld(),
+            builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+              return snapshot.connectionState == ConnectionState.waiting
+                  ? CircularProgressIndicator()
+                  : Text('스냅샷 데이터: ${snapshot.data.toString()}');
+              /*if (snapshot.hasData) {
               return Text('스냅샷 데이터: ${snapshot.data.toString()}');
             } else if (snapshot.hasData == false) {
               return const CircularProgressIndicator();
             } else if (snapshot.hasError) {
               return const Text('스냅샷 에러');
             } else {
-              return const Text('혹시 몰라서 else문 추가');
-            }
-          },
-        ),
+              return const Text('혹시 몰라서 else문 추가');*/
+            }),
       ),
     );
   }
