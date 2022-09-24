@@ -34,7 +34,9 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
               ),
             ),
           ),
-        )
+        ),
+            Container(color: Colors.pink, width: 300, height: 300, child:
+              const FittedBox(child: Text('a'),),),
       ]),
     );
   }
