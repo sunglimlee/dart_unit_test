@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:dart_unit_test/widgets/future_async_await.dart';
 import 'package:dart_unit_test/widgets/passing_by_reference.dart';
 import 'package:dart_unit_test/widgets/stack_example.dart';
 import 'package:dart_unit_test/widgets/use_factory_keyword.dart';
-import 'package:flutter/material.dart';
-
+import 'package:dart_unit_test/widgets/silver_floating_app_bar.dart';
 
 void main() {
   // inflate Widget
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'NoteKeeper',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: const FutureAsyncAwait(),
+      home: const SliverFloatingAppBarSteve(),
     );
   }
 }
