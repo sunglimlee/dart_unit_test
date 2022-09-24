@@ -1,3 +1,4 @@
+import 'package:dart_unit_test/widgets/Animated_container.dart';
 import 'package:dart_unit_test/widgets/image_related/hero_widget.dart';
 import 'package:dart_unit_test/widgets/platform_check.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       title: 'NoteKeeper',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: const HeroWidget(),
+      home: const AnimatedContainerWidget(),
     );
   }
 }
