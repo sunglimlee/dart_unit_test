@@ -29,7 +29,7 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
               Tab(icon: Icon(Icons.account_circle_rounded),),
             ],
           ),
-          title: const Text('Sunglim Lee'),
+          title: const Text('Sunglim Lee '),
         ),
         body: const Center(
           child: TabBarView(

@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     // return MaterialApp for Google Material Theme for entire Screen as a top parent
     // apply some Theme
     return MaterialApp(
-      title: 'NoteKeeper',
+      title: 'NoteKeeper.',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: const MyStatefulBuilderExample(),
